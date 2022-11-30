@@ -1,5 +1,5 @@
 # crashes-hawkes-process
-This repository contains the RStudio functions used for the thesis "[Modelling Crashes as Self-Exciting Point Process: A Study in Dhaka Metropolitan Area](https://drive.google.com/file/d/1rfMExHJ78NyAo-PIxwfBRUpDqO6qSatN/view?usp=sharing)"
+This repository contains the RStudio functions used for the thesis "[Modelling Crashes as Self-Exciting Point Process: A Study in Dhaka Metropolitan Area](https://engrxiv.org/preprint/view/2656/5006)"
 
 ## About the Thesis
 The thesis investigates whether the crashes in Dhaka Metropolitan Area (DMA) are self-exciting or not. A univariate exponentially decaying model is selected considering the crashes as a Hawkes Process with four parameters.
@@ -24,7 +24,7 @@ The `neg_loglikelihood` function is the function of interest that needs to be op
 - `params` is a vector containing the initial guesses of the parameters mu, alpha, beta and gamma in the order. 
 - `data` is a vector containing the timestamps of the crashes for which the likelihood is optimized
 
-The function processes the value of the variable `loglik` using the formula provided in the [study](https://drive.google.com/file/d/1rfMExHJ78NyAo-PIxwfBRUpDqO6qSatN/view?usp=sharing) and returns `-loglik`. 
+The function processes the value of the variable `loglik` using the formula provided in the [study](https://engrxiv.org/preprint/view/2656/5006) and returns `-loglik`. 
 
 ### `generate_mle_table`
 The `generate_mle_table` function is used to generate an excel file containing the optimized values of the parameters along with the provided intial guesses and the likelihood value. `writexl` library is required for the function to create the excel file.
